@@ -1,16 +1,8 @@
 """
-Исправить:
-1. Макет для даты (срок) #
-2. 
-3. 
-4. 
-
 Полезные ссылки:
 # http://it.kgsu.ru/Python_Qt/
 # https://doc.qt.io/qt-5/qt.html
 """
-
-
 
 import os
 import sys
@@ -26,7 +18,7 @@ from PyQt5.QtGui import QColor, QKeyEvent
 from PyQt5.QtCore import Qt, QSize
 
 
-#Класс для главного окна 
+# Класс для главного окна
 class MainWindow(QtWidgets.QMainWindow,Ui_MainWindow): 
 
     last_rez = [] # Сохраняет последний результат

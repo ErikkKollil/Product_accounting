@@ -6,13 +6,14 @@
 #
 # WARNING! All changes made in this file will be lost!
 
+import os
+
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import QSize, Qt
-import sys, os
+
 
 class Ui_History_Windows(object):
     def setupUi(self, History_Windows):
-
         def rpath(relative_path):
             try:
                 base_path = sys._MEIPASS
@@ -39,7 +40,7 @@ class Ui_History_Windows(object):
         self.pushButton_back.setCursor(Qt.PointingHandCursor) ######################################
         font = QtGui.QFont()
         font.setFamily("Constantia")
-        font.setPointSize(12)
+        font.setPointSize(11)
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_back.setFont(font)
@@ -89,7 +90,7 @@ class Ui_History_Windows(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton_searchh.setFont(font)
-        self.pushButton_searchh.setCursor(Qt.PointingHandCursor) ######################################
+        self.pushButton_searchh.setCursor(Qt.PointingHandCursor)  # !!!
         self.pushButton_searchh.setStyleSheet("QPushButton{\n"
 "    background-color: #e5f0ff;\n"
 "    border: 2px solid #4169e1;\n"
@@ -133,7 +134,7 @@ class Ui_History_Windows(object):
         self.tableWidget.setGeometry(QtCore.QRect(20, 60, 791, 511))
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
-        font.setPointSize(11.5)
+        font.setPointSize(12)
         self.tableWidget.setFont(font)
         self.tableWidget.setStyleSheet("background-color: #e5f0ff;\n"
 "border: 2px solid #4169e1;\n"
@@ -235,4 +236,3 @@ if __name__ == "__main__":
     ui.setupUi(History_Windows)
     History_Windows.show()
     sys.exit(app.exec_())
-

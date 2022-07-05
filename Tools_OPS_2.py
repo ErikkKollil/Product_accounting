@@ -8,12 +8,11 @@
 
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt
-import sys, os
+import os
 
 class Ui_Tools_Windows(object):
 
     def setupUi(self, Tools_Windows):
-
         def rpath(relative_path):
             try:
                 base_path = sys._MEIPASS
@@ -121,4 +120,3 @@ if __name__ == "__main__":
     ui.setupUi(Tools_Windows)
     Tools_Windows.show()
     sys.exit(app.exec_())
-
